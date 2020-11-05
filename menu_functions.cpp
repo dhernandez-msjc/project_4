@@ -18,3 +18,10 @@ cout << "b) whip tail " << endl;
 cout << "c) breath fire " << endl;
 cout << "q) quit " << endl;
 }
+
+//define menu option
+
+MenuOption to_menu_option(char menu_option) {
+  return static_cast<MenuOption>(menu_option);
+}
+

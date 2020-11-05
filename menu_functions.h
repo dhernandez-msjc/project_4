@@ -10,5 +10,16 @@
 
 void display_menu ();
 
+// create enum for menu options
+enum class MenuOption: char {
+  Bite = 'a',
+  WhipTail,
+  BreathFire,
+  Quit = 'q',
+};
+
+//create menu option
+
+MenuOption to_menu_option(char menu_option);
 
 #endif //PROJECT_4__MENU_FUNCTIONS_H_
