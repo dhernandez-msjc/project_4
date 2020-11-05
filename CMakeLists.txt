@@ -3,5 +3,5 @@ project(project_4)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(project_4 main.cpp)
+add_executable(project_4 main.cpp dragon_function.cpp dragon_function.h)
 
