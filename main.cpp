@@ -19,11 +19,10 @@ const int kMinSeconds = 1;
 const int kMaxSeconds = 20;
 
 //create and initialize rng's for damage and seconds
-std::mt19937 damage_rng(std::random_device {}());
-std::mt19937 seconds_rng(std::random_device {}());
-std::uniform_int_distribution<int> damage_range(kMinDamage,kMaxDamage);
-std::uniform_int_distribution<int> seconds_range(kMinSeconds,kMaxSeconds);
-
+std::mt19937 damage_rng(std::random_device{}());
+std::mt19937 seconds_rng(std::random_device{}());
+std::uniform_int_distribution<int> damage_range(kMinDamage, kMaxDamage);
+std::uniform_int_distribution<int> seconds_range(kMinSeconds, kMaxSeconds);
 
 int main() {
   //create bool for run program
@@ -40,35 +39,43 @@ int main() {
     std::cin >> menu_choice;
 
     //execute menu option
-    switch (to_menu_option(menu_choice)){
-      case MenuOption::Bite:{
+    switch (to_menu_option(menu_choice)) {
+      case MenuOption::Bite: {
         cout << endl;
+
         bite();
+
         break;
       }
-      case MenuOption::WhipTail:{
+      case MenuOption::WhipTail: {
         cout << endl;
+
         int damage = damage_range(damage_rng);
         whip_tail(damage);
+
         break;
       }
-      case MenuOption::BreathFire:{
+      case MenuOption::BreathFire: {
         cout << endl;
+
         int seconds = seconds_range(seconds_rng);
         int damage = damage_range(damage_rng);
         breath_fire(damage, seconds);
+
         break;
       }
-      case MenuOption::Quit:{
+      case MenuOption::Quit: {
         cout << endl;
+
         program_is_running = false;
+
         break;
       }
-      default:
-        break;
+      default:break;
     }
 
   }
+
   // display exit message
   cout << "Thank you for playing!!!" << endl;
 
