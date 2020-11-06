@@ -42,21 +42,25 @@ int main() {
     //execute menu option
     switch (to_menu_option(menu_choice)){
       case MenuOption::Bite:{
+        cout << endl;
         bite();
         break;
       }
       case MenuOption::WhipTail:{
+        cout << endl;
         int damage = damage_range(damage_rng);
         whip_tail(damage);
         break;
       }
       case MenuOption::BreathFire:{
+        cout << endl;
         int seconds = seconds_range(seconds_rng);
         int damage = damage_range(damage_rng);
         breath_fire(damage, seconds);
         break;
       }
       case MenuOption::Quit:{
+        cout << endl;
         program_is_running = false;
         break;
       }
@@ -64,8 +68,9 @@ int main() {
         break;
     }
 
-
   }
+  // display exit message
+  cout << "Thank you for playing!!!" << endl;
 
   return 0;
 }

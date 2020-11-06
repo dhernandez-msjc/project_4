@@ -13,13 +13,13 @@ using std::endl;
 //define functions for dragon
 
 void bite() {
-cout << "Dragon bites you!" << endl;
+cout << "Dragon bites you!" << "\n\n";
 }
 
 void whip_tail(int damage) {
-cout << "Dragon whips tail for " << damage << " damage!" << endl;
+cout << "Dragon whips tail for " << damage << " damage!" << "\n\n";
 }
 
 void breath_fire(int damage, int time) {
-cout << "Dragon breathes fire for " << time << " seconds, you take " << damage << " damage!" << endl;
+cout << "Dragon breathes fire for " << time << " seconds, you take " << damage << " damage!" << "\n\n";
 }
