@@ -17,9 +17,9 @@ cout << "Dragon bites you!" << endl;
 }
 
 void whip_tail(int damage) {
-cout << "Dragon whips tail for " << damage << " damage." << endl;
+cout << "Dragon whips tail for " << damage << " damage!" << endl;
 }
 
 void breath_fire(int damage, int time) {
-cout << "Dragon breathes fire for " << time << " seconds, you take " << damage << " amount of damage." << endl;
+cout << "Dragon breathes fire for " << time << " seconds, you take " << damage << " damage!" << endl;
 }
