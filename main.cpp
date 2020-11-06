@@ -12,6 +12,7 @@
 using std::cout;
 using std::endl;
 
+// TODO: constants should never be placed outside of main, none of these belong.  
 //declare constants for ranges of rng's
 const int kMinDamage = 1;
 const int kMaxDamage = 200;
@@ -48,6 +49,7 @@ int main() {
         break;
       }
       case MenuOption::WhipTail: {
+        // todo: lots of repeats of these that do not belong. 
         cout << endl;
 
         int damage = damage_range(damage_rng);
