@@ -3,6 +3,8 @@
 //November 05, 2020
 //CSIS 113A
 
+// TODO: these should be organized per the discussion in the video
+//       core imports frist, those that use <>, and the local last " "
 #include <iostream>
 #include "dragon_function.h"
 #include "menu_functions.h"
@@ -11,6 +13,12 @@
 
 using std::cout;
 using std::endl;
+
+// TODO: none of these belong outside of main. I have never made varaibles outside
+//       and there is a reason, and I've stated never place variables in the global
+//       scope, that is you should not have them declared outside of main.
+
+// TODO: not enough commenting throughout your program. 
 
 //declare constants for ranges of rng's
 const int kMinDamage = 1;
@@ -38,9 +46,12 @@ int main() {
     char menu_choice;
     std::cin >> menu_choice;
 
+    // TODO: this tells me nothing. The switch is not executing anything, it is for decisions,
+    //       the body of each case does. 
     //execute menu option
     switch (to_menu_option(menu_choice)) {
       case MenuOption::Bite: {
+        // todo: this is redundant and should not be here.
         cout << endl;
 
         bite();
